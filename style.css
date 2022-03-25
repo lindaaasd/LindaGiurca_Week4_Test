@@ -1,0 +1,324 @@
+﻿* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif;*/
+
+body {
+    background-color: #edf2f4;
+    margin: 0;
+}
+
+footer {
+    background-color: #2b2d42;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding: 10px;
+    margin: 5px;
+    list-style: none;
+}
+
+.nav-wrapper {
+    display: flex;
+    background-color: #ef233c;
+    box-shadow: 0 70px 63px -60px #000;
+}
+
+.nav-row {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+}
+
+.nav-btn {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #d90429;
+    background: #d90429;
+    vertical-align: middle;
+}
+
+.nav-btn:hover {
+    background: #fff;
+    color: #d90429
+}
+
+.trailer-row {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 80vh;
+}
+
+.schedaTecnica-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.schedaTecnica-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+
+.header-title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-align:center;
+    padding: 10px;
+}
+
+p {
+    padding: 5px;
+    text-align:center;
+}
+
+/*CARDS x ATTORI*/
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    max-height: 800px;
+    max-width: 1280px;
+    min-height: 600px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.border {
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+
+.border:hover {
+        border: 1px solid #fff;
+}
+
+.card {
+    height: 379px;
+    width: 300px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-geneh {
+    background: url("./media/geneh.jpeg") center center no-repeat;
+    background-size: 300px;
+}
+
+.card-geneh:hover {
+    background: url("./media/geneh.jpeg") left center no-repeat;
+    background-size: 600px;
+}
+
+.card-geneh:hover h2 {
+    opacity: 1;
+}
+
+.card-gwinp {
+    background: url("./media/gwinp.png") center center no-repeat;
+    background-size: 300px;
+}
+
+.card-gwinp:hover {
+    background: url("./media/gwinp.png") left center no-repeat;
+    background-size: 600px;
+}
+
+.card-gwinp:hover h2 {
+     opacity: 1;
+}
+
+.card-anjelicah {
+    background: url("./media/anjelicah.jpeg") center center no-repeat;
+    background-size: 300px;
+}
+
+.card-anjelicah:hover {
+    background: url("./media/anjelicah.jpeg") left center no-repeat;
+    background-size: 600px;
+}
+
+.card-anjelicah:hover h2 {
+    opacity: 1;
+}
+
+.card-anjelicah {
+    background: url("./media/anjelicah.jpeg") center center no-repeat;
+    background-size: 300px;
+}
+
+.card-anjelicah:hover {
+    background: url("./media/anjelicah.jpeg") left center no-repeat;
+    background-size: 600px;
+}
+
+.card-anjelicah:hover h2 {
+    opacity: 1;
+}
+
+.card-billm {
+    background: url("./media/billm.jpeg") center center no-repeat;
+    background-size: 300px;
+}
+
+.card-billm:hover {
+    background: url("./media/billm.jpeg") left center no-repeat;
+    background-size: 600px;
+}
+
+.card-billm:hover h2 {
+    opacity: 1;
+}
+
+h2 {
+    color: #fff;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/*NEWSLETTER FORM
+*/
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #2b2d42;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.login-box h3 {
+     margin: 0 0 30px;
+     padding: 0;
+     color: #fff;
+     text-align: center;
+}
+
+.login-box .user-box {
+      position: relative;
+}
+
+.login-box .user-box input {
+       width: 100%;
+       padding: 10px 0;
+       font-size: 16px;
+       color: #fff;
+       margin-bottom: 30px;
+       border: none;
+       border-bottom: 1px solid #fff;
+       outline: none;
+       background: transparent;
+}
+
+.login-box .user-box label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        pointer-events: none;
+        transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #ef233c;
+        font-size: 12px;
+}
+
+.form-btn {
+    background-color:transparent;
+    border: none;
+}
+
+.login-box form button {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px
+}
+
+.login-box button:hover {
+        background: #ef233c;
+        color: #fff;
+        border-radius: 5px;
+}
+
+.login-box button {
+        position: absolute;
+        display: block;
+}
+
+.newsletter-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #8d99ae;
+}
+
+#unsubscribeBtn {
+    visibility: hidden;
+}
